@@ -163,7 +163,7 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
 .unit-tabs{position:static;border-bottom:1px solid var(--sand-200);background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none;box-shadow:none}
 .lesson-tabs{display:flex;gap:.35rem;padding:.5rem 1rem;overflow-x:auto;justify-content:flex-start;scrollbar-width:none;background:rgba(255,250,240,.7)}
 .lesson-tabs::-webkit-scrollbar{display:none}
-.lesson-tab{flex-shrink:0;display:inline-flex;align-items:center;gap:.3rem;padding:.35rem .75rem;border-radius:18px;border:1.5px solid var(--sand-200);background:#fff;font-family:'DM Sans',sans-serif;font-size:.72rem;font-weight:600;color:var(--ink-light);cursor:pointer;transition:.2s;white-space:nowrap;text-decoration:none}
+.lesson-tab{flex-shrink:0;display:inline-flex;align-items:center;gap:.3rem;padding:.35rem .75rem;border-radius:18px;border:1.5px solid var(--sand-200);background:#fff;font-family:'DM Sans',sans-serif;font-size:.72rem;font-weight:600;color:var(--ink-light);cursor:pointer;transition:.2s;text-decoration:none}
 .lesson-tab .l-num{font-family:'Noto Naskh Arabic',serif;font-size:.85rem;color:var(--gold);font-weight:700}
 .lesson-tab:hover{border-color:var(--gold);color:var(--gold)}
 .lesson-tab.active{background:var(--gold);color:#fff;border-color:var(--gold)}
@@ -175,8 +175,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
 .audio-block .track-btn.active{background:var(--gold);color:#fff}
 .audio-block .src-note{font-size:.65rem;color:var(--ink-muted);opacity:.7;text-align:right;font-style:italic}
 @media(max-width:600px){.lesson-tabs{padding:.4rem .6rem}.lesson-tab{padding:.3rem .65rem;font-size:.7rem}.audio-block{padding:.7rem .8rem}.audio-block .track-btn{padding:.28rem .65rem;font-size:.72rem}}
-/* ═══════ ENHANCED COMPONENTS (ported & themed) ═══════ */
-/* Study notes */
 .study-note{position:relative;background:#eff2eb;border:1.5px solid #ccd4c3;border-radius:12px;padding:14px 18px 14px 54px;margin:16px 0;box-shadow:0 2px 10px rgba(0,0,0,.06)}
 .study-note::before{content:"📝";position:absolute;left:14px;top:12px;font-size:1.3rem;background:#e2e8da;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;border:1.5px solid #ccd4c3}
 .study-note .sn-label{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:#5f7a57;margin-bottom:5px;display:block}
@@ -200,7 +198,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
 .study-note.lesson::before{content:"💎";background:#e6e9e2;border-color:var(--gold)}
 .study-note.lesson .sn-label{color:var(--gold-dark)}
 .study-note.lesson .sn-body{color:var(--ink)}
-/* Definition box */
 .defbox{background:var(--white);border:1px solid var(--sand-200);border-radius:12px;overflow:hidden;margin:14px 0;box-shadow:var(--card-shadow)}
 .defbox-tag{background:var(--teal);color:#fff;padding:6px 16px;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
 .defbox-tag.gold{background:var(--gold)}
@@ -208,13 +205,11 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
 .defbox-ar{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.5rem;color:var(--ink);line-height:2;margin-bottom:8px;text-align:right;direction:rtl}
 .defbox-tr{font-family:'Source Serif 4',serif;font-style:italic;color:var(--gold-dark);font-size:.92rem;margin-bottom:6px;direction:ltr;unicode-bidi:plaintext;text-align:right}
 .defbox-en{color:var(--ink-light);font-size:.92rem;line-height:1.65}
-/* Numbered points */
 .point{background:var(--sand-50);border:1px solid var(--sand-200);border-radius:12px;padding:12px 16px;margin:14px 0 8px;display:flex;align-items:flex-start;gap:12px}
 .point-num{background:var(--gold);color:#fff;width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:700;flex-shrink:0;margin-top:2px}
 .point-ar{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.4rem;font-weight:500;color:var(--ink);direction:rtl;text-align:right;line-height:2}
 .point-tr{font-family:'Source Serif 4',serif;font-style:italic;font-size:.85rem;color:var(--gold-dark);direction:ltr;unicode-bidi:plaintext;text-align:right}
 .point-en{font-size:.9rem;color:var(--ink-light);line-height:1.6;margin-top:2px}
-/* Compare grid */
 .compare-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
 .compare-card{border-radius:12px;overflow:hidden;box-shadow:var(--card-shadow);border:1px solid var(--sand-200)}
 .compare-card-head{padding:10px 16px;font-weight:700;font-size:.9rem;color:#fff}
@@ -225,7 +220,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
 .compare-card-body{background:var(--white)}
 .compare-card-body li{padding:9px 16px;font-size:.88rem;border-bottom:1px solid var(--sand-100);list-style:none;color:var(--ink-light);line-height:1.6}
 .compare-card-body li:last-child{border-bottom:none}
-/* Interactive reveal answers */
 .reveal-controls{display:flex;gap:8px;margin:6px 0 14px;flex-wrap:wrap}
 .btn-reveal-all,.btn-hide-all{background:var(--white);border:1.5px solid var(--teal);color:var(--teal-dark);padding:5px 14px;border-radius:18px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:.8rem;font-weight:600;transition:.2s}
 .btn-reveal-all:hover{background:var(--teal);color:#fff}
@@ -238,7 +232,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
 .answer-box .a-ar{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.4rem;direction:rtl;text-align:right;color:var(--teal-dark);line-height:2;display:block;margin-bottom:4px}
 .answer-box .a-ar.false{color:var(--red-accent)}
 @keyframes fadeDown{from{opacity:0;transform:translateY(-6px)}to{opacity:1;transform:translateY(0)}}
-/* Flip vocab cards */
 .vflip-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:8px 0}
 .vcard{background:var(--white);border:1px solid var(--sand-200);border-left:3px solid var(--sand-300);border-radius:12px;padding:14px 16px 26px;box-shadow:var(--card-shadow);cursor:pointer;position:relative;transition:.2s}
 .vcard:hover{box-shadow:0 6px 18px rgba(0,0,0,.08);transform:translateY(-2px);border-left-color:var(--teal)}
@@ -255,7 +248,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
 .vflip-btn{background:var(--white);border:1.5px solid var(--sand-200);color:var(--ink-light);padding:5px 13px;border-radius:16px;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:.78rem;font-weight:600;transition:.2s}
 .vflip-btn:hover{border-color:var(--teal);color:var(--teal-dark);background:var(--sand-50)}
 .vflip-count{font-size:.75rem;color:var(--ink-muted);margin-left:auto}
-/* Vocab reference table */
 .vocab-table{width:100%;border-collapse:collapse;border-radius:12px;overflow:hidden;box-shadow:var(--card-shadow);margin:8px 0 14px}
 .vocab-table thead tr{background:var(--teal)}
 .vocab-table thead th{color:#fff;padding:9px 14px;text-align:right;font-size:.78rem;font-weight:600}
@@ -270,7 +262,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
 .vtd-type.verb{background:rgba(100,126,90,.16);color:var(--gold-dark)}
 .vtd-type.particle{background:rgba(122,122,122,.14);color:var(--ink-light)}
 .vtd-type.phrase{background:rgba(184,50,50,.12);color:var(--red-accent)}
-/* Hamburger + drawer */
 .hamburger{position:fixed;top:1rem;left:1rem;z-index:320;background:var(--teal);border:none;cursor:pointer;padding:11px;display:flex;flex-direction:column;gap:4px;border-radius:10px;box-shadow:0 3px 12px rgba(0,0,0,.2);transition:.2s}
 .hamburger:hover{background:var(--teal-dark)}
 .hamburger span{display:block;width:20px;height:2px;background:#fff;border-radius:1px;transition:.3s}
@@ -294,6 +285,64 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
 .drawer-lesson .dl-title{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1rem;color:var(--ink);line-height:1.5;margin-top:2px;direction:rtl;text-align:right}
 .drawer-lesson .dl-en{font-size:.78rem;color:var(--ink-muted);margin-top:1px}
 @media(max-width:600px){.compare-grid{grid-template-columns:1fr}.hamburger{top:.7rem;left:.7rem}.study-note{padding:12px 14px 12px 48px}.vcard .vc-ar{font-size:1.5rem}}
+/* ═══════════ ENHANCEMENTS (themes, search, pager, explainer, practice+) ═══════════ */
+:root[data-theme="emerald"]{--gold:#1f6e4d;--gold-dark:#164e37;--teal:#2f7d59;--teal-dark:#1c5e40}
+:root[data-theme="plum"]{--gold:#9d5c78;--gold-dark:#7b4560;--teal:#6d3b56;--teal-dark:#4f2a3e}
+:root[data-theme="midnight"]{--gold:#c6a24a;--gold-dark:#9a7c36;--teal:#21496f;--teal-dark:#163353}
+:root[data-theme="ocean"]{--gold:#e0a12e;--gold-dark:#b07d1f;--teal:#0e7490;--teal-dark:#0a566b}
+:root[data-theme="night"]{--sand-50:#12171a;--sand-100:#1a2024;--sand-200:#2a323a;--sand-300:#3a444d;--white:#1c2329;--ink:#eae6dc;--ink-light:#cfc9bd;--ink-muted:#948f84;--gold:#d8b25a;--gold-dark:#e6c473;--teal:#5cb992;--teal-dark:#84d2af;--green-accent:#66c79d;--card-shadow:0 2px 16px rgba(0,0,0,.45)}
+:root[data-theme="night"] body{background:var(--sand-50)}
+:root[data-theme="night"] .lesson{background:var(--white)}
+:root[data-theme="night"] .tabs-stack{background:rgba(18,23,26,.96)}
+:root[data-theme="night"] .lesson-tabs{background:rgba(26,32,36,.85)}
+:root[data-theme="night"] .lesson-tab,:root[data-theme="night"] .tab-btn,:root[data-theme="night"] .mode-btn,:root[data-theme="night"] .practice-card,:root[data-theme="night"] .mc-option,:root[data-theme="night"] .track-btn,:root[data-theme="night"] .number-card{background:var(--white);color:var(--ink)}
+:root[data-theme="night"] .score-bar{background:var(--white)}
+:root[data-theme="night"] .fill-input{background:var(--sand-100);color:var(--ink)}
+:root[data-theme="night"] .hero{background:linear-gradient(135deg,#0e1417,#1a2830 55%,#243036)}
+:root[data-theme="night"] .footer{background:#0e1417}
+:root[data-theme="night"] .unit-header{background:#18242a}
+:root[data-theme="night"] .study-note{background:#1f272c;border-color:#33404a;color:var(--ink-light)}
+:root[data-theme="night"] .study-note .sn-body{color:var(--ink-light)}
+:root[data-theme="night"] .study-note::before{background:#2a343b;border-color:#3a4650}
+:root[data-theme="night"] .study-note .sn-title,:root[data-theme="night"] .study-note.lesson .sn-body{color:var(--ink)}
+:root[data-theme="night"] .study-note.lesson{background:linear-gradient(135deg,#20282d,#242c33)}
+:root[data-theme="night"] .study-note.watch-out{background:#2c2622;border-color:#6a5238}
+:root[data-theme="night"] .study-note.beginner{background:#1c2830}
+:root[data-theme="night"] .study-note.root-tip{background:#1d262c}
+:root[data-theme="night"] .answer-box,:root[data-theme="night"] .point,:root[data-theme="night"] .exercise,:root[data-theme="night"] .vcard,:root[data-theme="night"] .vocab-card{background:var(--sand-100);color:var(--ink)}
+:root[data-theme="night"] .line:nth-child(odd){background:var(--sand-100)}
+:root[data-theme="night"] .passage{background:rgba(92,185,146,.06)}
+.enh-search{position:relative;padding:.4rem 1rem .6rem}
+.enh-search input{width:100%;max-width:640px;margin:0 auto;display:block;padding:.55rem 1rem;border:1.5px solid var(--sand-200);border-radius:22px;background:var(--white);color:var(--ink);font-family:'DM Sans',sans-serif;font-size:.9rem;outline:none;transition:.2s}
+.enh-search input:focus{border-color:var(--teal)}
+.enh-results{max-width:640px;margin:.35rem auto 0;background:var(--white);border:1px solid var(--sand-200);border-radius:12px;box-shadow:0 8px 28px rgba(0,0,0,.14);max-height:340px;overflow-y:auto;display:none}
+.enh-results.open{display:block}
+.sr-item{padding:.55rem .9rem;border-bottom:1px solid var(--sand-100);cursor:pointer;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap;font-size:.85rem;color:var(--ink-light)}
+.sr-item:last-child{border-bottom:none}
+.sr-item:hover{background:var(--sand-50)}
+.sr-ar{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.25rem;color:var(--ink);direction:rtl}
+.sr-tr{font-style:italic;color:var(--gold-dark)}
+.sr-les{color:var(--teal-dark);font-weight:600}
+.sr-u{margin-left:auto;font-size:.66rem;font-weight:700;color:#fff;background:var(--teal);border-radius:8px;padding:1px 7px}
+.sr-empty{padding:.7rem .9rem;color:var(--ink-muted);font-size:.85rem}
+.expl-card{border:1.5px solid var(--gold);border-radius:14px;margin:16px 0;overflow:hidden;background:var(--white);box-shadow:var(--card-shadow)}
+.expl-head{background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:#fff;padding:9px 16px;font-weight:700;font-size:.9rem}
+.expl-head .expl-ar{font-family:'Noto Naskh Arabic','Amiri',serif;font-weight:400;opacity:.9}
+.expl-tabs{display:flex;gap:6px;padding:10px 16px 0}
+.expl-tab{border:1.5px solid var(--sand-200);background:var(--sand-50);color:var(--ink-light);border-radius:16px;padding:4px 16px;font-family:'DM Sans',sans-serif;font-size:.8rem;font-weight:600;cursor:pointer;transition:.2s}
+.expl-tab.active{background:var(--teal);color:#fff;border-color:var(--teal)}
+.expl-pane{display:none;padding:12px 16px 16px;font-size:.95rem;line-height:1.7;color:var(--ink-light)}
+.expl-pane.active{display:block}
+.expl-checkup{margin-top:10px;font-style:italic;color:var(--teal-dark);font-size:.88rem;border-left:3px solid var(--gold);padding-left:10px}
+.lesson-pager{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:24px;padding-top:16px;border-top:1px solid var(--sand-200)}
+.pg-btn{background:var(--teal);color:#fff;border:none;border-radius:12px;padding:.6rem 1.1rem;font-family:'DM Sans',sans-serif;font-size:.85rem;font-weight:600;cursor:pointer;transition:.2s}
+.pg-btn:hover{background:var(--teal-dark)}
+.pg-pos{font-size:.78rem;color:var(--ink-muted);text-align:center}
+.drawer-themes{margin-top:16px;padding-top:12px;border-top:1px solid var(--sand-200)}
+.sw-row{display:flex;gap:10px;flex-wrap:wrap;padding:6px 8px 2px}
+.sw{width:30px;height:30px;border-radius:50%;cursor:pointer;border:2px solid var(--sand-200);transition:.2s}
+.sw:hover{transform:scale(1.08)}
+.sw.active{border-color:var(--ink);box-shadow:0 0 0 2px var(--white),0 0 0 4px var(--teal)}
 </style>
 </head>
 <body>
@@ -302,6 +351,7 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
 <aside class="drawer" id="drawer">
   <div class="drawer-header"><div class="drawer-title">الدُّرُوس · Lessons</div><button class="drawer-close" onclick="toggleDrawer()" aria-label="Close">×</button></div>
   <div id="drawerBody"></div>
+  <div class="drawer-themes" id="drawerThemes"></div>
 </aside>
 <header class="hero">
   <h1>الأُصُولُ الثَّلَاثَةُ</h1>
@@ -317,6 +367,7 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
   <button class="tab-btn" data-tab="practice" onclick="switchTab('practice')"><span class="tab-ar">تَدْريب</span> Practice</button>
 </nav>
 <nav class="lesson-tabs" id="lessonTabs"></nav>
+<div class="enh-search"><input id="searchInput" type="search" autocomplete="off" placeholder="🔍  Search Arabic, transliteration, or English…" oninput="runSearch(this.value)" onfocus="runSearch(this.value)"><div class="enh-results" id="searchResults"></div></div>
 </div>
 <div class="unit-panel active" id="panel-u1">
 <section class="unit-header" id="unit1">
@@ -326,7 +377,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
   <p class="translation">Introduction — The Four Matters &amp; The Three Matters</p>
 </section>
 <div class="container">
-<!-- ═══════════ LESSON 1 ═══════════ -->
 <article class="lesson" id="l1">
   <div class="lesson-header"><div>
     <span class="lesson-number">المُقَدِّمَةُ · الدَّرْسُ «١»</span>
@@ -394,7 +444,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
     </div>
   </div>
 </article>
-<!-- ═══════════ LESSON 2 ═══════════ -->
 <article class="lesson" id="l2">
   <div class="lesson-header"><div>
     <span class="lesson-number">المُقَدِّمَةُ · الدَّرْسُ «٢»</span>
@@ -463,7 +512,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
     </div>
   </div>
 </article>
-<!-- ═══════════ LESSON 3 ═══════════ -->
 <article class="lesson" id="l3">
   <div class="lesson-header"><div>
     <span class="lesson-number">المُقَدِّمَةُ · الدَّرْسُ «٣»</span>
@@ -530,7 +578,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
     </div>
   </div>
 </article>
-<!-- ═══════════ LESSON 4 ═══════════ -->
 <article class="lesson" id="l4">
   <div class="lesson-header"><div>
     <span class="lesson-number">المُقَدِّمَةُ · الدَّرْسُ «٤»</span>
@@ -609,7 +656,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
     </div>
   </div>
 </article>
-<!-- ═══════════ LESSON 5 ═══════════ -->
 <article class="lesson" id="l5">
   <div class="lesson-header"><div>
     <span class="lesson-number">المُقَدِّمَةُ · الدَّرْسُ «٥»</span>
@@ -681,7 +727,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
     </div>
   </div>
 </article>
-<!-- ═══════════ LESSON 6 ═══════════ -->
 <article class="lesson" id="l6">
   <div class="lesson-header"><div>
     <span class="lesson-number">المُقَدِّمَةُ · الدَّرْسُ «٦»</span>
@@ -703,7 +748,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
     </div>
     <hr class="section-divider">
     <span class="section-label gold">الأُصُولُ الثَّلَاثَةُ — The Three Principles at a Glance</span>
-    <p class="note"><em>Each principle is treated in its own unit, to be added next in PDF order.</em></p>
     <table class="grammar-table">
       <thead><tr><th>#</th><th>الأَصْلُ</th><th>Transliteration</th><th>The Principle</th></tr></thead>
       <tbody>
@@ -712,7 +756,7 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
         <tr><td>٣</td><td class="ar-cell">مَعْرِفَةُ نَبِيِّهِ مُحَمَّدٍ ﷺ</td><td class="tr-cell">Maʿrifatu nabiyyihi Muḥammad ﷺ</td><td class="en-cell">Knowing your Prophet Muḥammad ﷺ (the Third Principle).</td></tr>
       </tbody>
     </table>
-    <div class="study-note beginner"><span class="sn-label">💡 The bridge to the rest of the book</span><div class="sn-body">This short exchange is the <strong>hinge</strong> of the treatise. Everything before it was preparation; everything after it expands these three. The next units (to be added) take each principle in turn: <strong>knowing your Lord</strong>, <strong>knowing your religion</strong>, and <strong>knowing your Prophet ﷺ</strong> — each with its own proofs.</div></div>
+    <div class="study-note beginner"><span class="sn-label">💡 The bridge to the rest of the book</span><div class="sn-body">This short exchange is the <strong>hinge</strong> of the treatise. Everything before it was preparation; everything after it expands these three. The next units take each principle in turn: <strong>knowing your Lord</strong>, <strong>knowing your religion</strong>, and <strong>knowing your Prophet ﷺ</strong> — each with its own proofs.</div></div>
     <div class="study-note root-tip"><span class="sn-label">🌱 Word root</span><div class="sn-title">الأُصُول · al-uṣūl</div><div class="sn-body">Plural of <em>aṣl</em>, from <strong>أ-ص-ل</strong> (root, foundation). <em>Uṣūl</em> are the <strong>roots</strong> a thing is built on — hence the book's title, <em>al-Uṣūl ath-Thalāthah</em>, "the three foundations." The opposite is <em>furūʿ</em> (branches).</div></div>
     <hr class="section-divider">
     <span class="section-label gold">الـمُفْرَدَاتُ — Vocabulary (tap a card to flip)</span>
@@ -745,8 +789,7 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
     </div>
   </div>
 </article>
-<!--END-->
-</div><!-- /container -->
+</div>
 </div>
 <div class="unit-panel" id="panel-u2">
 <section class="unit-header" id="unit2">
@@ -756,7 +799,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
   <p class="translation">The First Principle — Knowing Your Lord</p>
 </section>
 <div class="container">
-<!-- ═══════════ LESSON 7 ═══════════ -->
 <article class="lesson" id="l7">
   <div class="lesson-header"><div>
     <span class="lesson-number">الأَصْلُ الأَوَّلُ · الدَّرْسُ «٧»</span>
@@ -829,7 +871,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
     </div>
   </div>
 </article>
-<!-- ═══════════ LESSON 8 ═══════════ -->
 <article class="lesson" id="l8">
   <div class="lesson-header"><div>
     <span class="lesson-number">الأَصْلُ الأَوَّلُ · الدَّرْسُ «٨»</span>
@@ -853,7 +894,7 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
     <span class="section-label gold" style="margin-top:1.5rem">أَنْوَاعُ العِبَادَةِ — The Types of Worship</span>
     <div class="passage">
       <p class="ar">وَأَنْوَاعُ العِبَادَةِ الَّتِي أَمَرَ اللهُ بِهَا مِثْلُ: الإِسْلَامِ وَالإِيمَانِ وَالإِحْسَانِ، وَمِنْهُ: الدُّعَاءُ وَالخَوْفُ وَالرَّجَاءُ وَالتَّوَكُّلُ وَالرَّغْبَةُ وَالرَّهْبَةُ وَالخُشُوعُ وَالخَشْيَةُ وَالإِنَابَةُ وَالاسْتِعَانَةُ وَالاسْتِعَاذَةُ وَالاسْتِغَاثَةُ وَالذَّبْحُ وَالنَّذْرُ وَغَيْرُ ذَلِكَ مِنْ أَنْوَاعِ العِبَادَةِ الَّتِي أَمَرَ اللهُ بِهَا، كُلُّهَا لِلهِ تَعَالَى.</p>
-      <p class="tr">Wa anwāʿu-l-ʿibādati-llatī amara-llāhu bihā mithlu: al-Islāmi wa-l-Īmāni wa-l-Iḥsān, wa minhu: ad-duʿāʾu wa-l-khawfu wa-r-rajāʾu wa-t-tawakkulu wa-r-raghbatu wa-r-rahbatu wa-l-khushūʿu wa-l-khashyatu wa-l-ināba­tu wa-l-istiʿānatu wa-l-istiʿādhatu wa-l-istighāthatu wa-dh-dhabḥu wa-n-nadhru wa ghayru dhālik… kulluhā li-llāhi taʿālā.</p>
+      <p class="tr">Wa anwāʿu-l-ʿibādati-llatī amara-llāhu bihā mithlu: al-Islāmi wa-l-Īmāni wa-l-Iḥsān, wa minhu: ad-duʿāʾu wa-l-khawfu wa-r-rajāʾu wa-t-tawakkulu wa-r-raghbatu wa-r-rahbatu wa-l-khushūʿu wa-l-khashyatu wa-l-inābatu wa-l-istiʿānatu wa-l-istiʿādhatu wa-l-istighāthatu wa-dh-dhabḥu wa-n-nadhru wa ghayru dhālik… kulluhā li-llāhi taʿālā.</p>
       <p class="en">The types of worship Allāh commanded include Islām, Īmān, and Iḥsān; and among them: supplication, fear, hope, reliance, desire, dread, humility, reverent awe, turning in obedience, seeking help, seeking refuge, seeking rescue, sacrifice, vows, and other types Allāh commanded — <strong>all of them are for Allāh alone</strong>.</p>
     </div>
     <div class="study-note watch-out"><span class="sn-label">⚠️ The dividing line</span><div class="sn-body">This list is the heart of the First Principle. Each item is an act of <strong>worship</strong>. The rule that follows is absolute: directing <em>any one of them</em> to other than Allāh is shirk.</div></div>
@@ -897,7 +938,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
     </div>
   </div>
 </article>
-<!-- ═══════════ LESSON 9 ═══════════ -->
 <article class="lesson" id="l9">
   <div class="lesson-header"><div>
     <span class="lesson-number">الأَصْلُ الأَوَّلُ · الدَّرْسُ «٩»</span>
@@ -964,7 +1004,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
     </div>
   </div>
 </article>
-<!-- ═══════════ LESSON 10 ═══════════ -->
 <article class="lesson" id="l10">
   <div class="lesson-header"><div>
     <span class="lesson-number">الأَصْلُ الأَوَّلُ · الدَّرْسُ «١٠»</span>
@@ -1020,7 +1059,7 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
     </div>
   </div>
 </article>
-</div><!-- /container -->
+</div>
 </div>
 <div class="unit-panel" id="panel-u3">
 <section class="unit-header" id="unit3">
@@ -1030,7 +1069,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
   <p class="translation">The Second Principle — Knowing the Religion of Islām</p>
 </section>
 <div class="container">
-<!-- ═══════════ LESSON 11 ═══════════ -->
 <article class="lesson" id="l11">
   <div class="lesson-header"><div>
     <span class="lesson-number">الأَصْلُ الثَّانِي · الدَّرْسُ «١١»</span>
@@ -1102,7 +1140,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
     </div>
   </div>
 </article>
-<!-- ═══════════ LESSON 12 ═══════════ -->
 <article class="lesson" id="l12">
   <div class="lesson-header"><div>
     <span class="lesson-number">الأَصْلُ الثَّانِي · الدَّرْسُ «١٢»</span>
@@ -1174,7 +1211,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
     </div>
   </div>
 </article>
-<!-- ═══════════ LESSON 13 ═══════════ -->
 <article class="lesson" id="l13">
   <div class="lesson-header"><div>
     <span class="lesson-number">الأَصْلُ الثَّانِي · الدَّرْسُ «١٣»</span>
@@ -1253,7 +1289,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
     </div>
   </div>
 </article>
-<!-- ═══════════ LESSON 14 ═══════════ -->
 <article class="lesson" id="l14">
   <div class="lesson-header"><div>
     <span class="lesson-number">الأَصْلُ الثَّانِي · الدَّرْسُ «١٤»</span>
@@ -1320,7 +1355,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
     </div>
   </div>
 </article>
-<!-- ═══════════ LESSON 15 ═══════════ -->
 <article class="lesson" id="l15">
   <div class="lesson-header"><div>
     <span class="lesson-number">الأَصْلُ الثَّانِي · الدَّرْسُ «١٥»</span>
@@ -1381,7 +1415,7 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
     </div>
   </div>
 </article>
-</div><!-- /container -->
+</div>
 </div>
 <div class="unit-panel" id="panel-u4">
 <section class="unit-header" id="unit4">
@@ -1391,7 +1425,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
   <p class="translation">The Third Principle — Knowing Your Prophet Muḥammad ﷺ</p>
 </section>
 <div class="container">
-<!-- ═══════════ LESSON 16 ═══════════ -->
 <article class="lesson" id="l16">
   <div class="lesson-header"><div>
     <span class="lesson-number">الأَصْلُ الثَّالِثُ · الدَّرْسُ «١٦»</span>
@@ -1462,7 +1495,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
     </div>
   </div>
 </article>
-<!-- ═══════════ LESSON 17 ═══════════ -->
 <article class="lesson" id="l17">
   <div class="lesson-header"><div>
     <span class="lesson-number">الأَصْلُ الثَّالِثُ · الدَّرْسُ «١٧»</span>
@@ -1534,7 +1566,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
     </div>
   </div>
 </article>
-<!-- ═══════════ LESSON 18 ═══════════ -->
 <article class="lesson" id="l18">
   <div class="lesson-header"><div>
     <span class="lesson-number">الأَصْلُ الثَّالِثُ · الدَّرْسُ «١٨»</span>
@@ -1600,7 +1631,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
     </div>
   </div>
 </article>
-<!-- ═══════════ LESSON 19 ═══════════ -->
 <article class="lesson" id="l19">
   <div class="lesson-header"><div>
     <span class="lesson-number">الأَصْلُ الثَّالِثُ · الدَّرْسُ «١٩»</span>
@@ -1662,7 +1692,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
     </div>
   </div>
 </article>
-<!-- ═══════════ LESSON 20 ═══════════ -->
 <article class="lesson" id="l20">
   <div class="lesson-header"><div>
     <span class="lesson-number">الأَصْلُ الثَّالِثُ · الدَّرْسُ «٢٠»</span>
@@ -1740,7 +1769,6 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
     </div>
   </div>
 </article>
-<!-- ═══════════ LESSON 21 ═══════════ -->
 <article class="lesson" id="l21">
   <div class="lesson-header"><div>
     <span class="lesson-number">الأَصْلُ الثَّالِثُ · الدَّرْسُ «٢١»</span>
@@ -1802,7 +1830,7 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
     </div>
   </div>
 </article>
-</div><!-- /container -->
+</div>
 </div>
 <div class="unit-panel" id="panel-practice">
 <div class="container">
@@ -1833,7 +1861,7 @@ body.hide-en .english,body.hide-en .en,body.hide-en .en-cell,body.hide-en .engli
     <div style="text-align:center"><button class="practice-btn secondary" onclick="resetDeck()">↺ Restart Deck</button></div>
   </div>
 </article>
-</div><!-- /container -->
+</div>
 </div>
 <div class="float-toggle">
   <span class="toggle-label">Show / Hide</span>
@@ -1965,18 +1993,18 @@ u4:[
 ]
 };
 decks.all=[...decks.u1,...decks.u2,...decks.u3,...decks.u4];
-let deckKey='u1',deck=decks.u1,mode='flash',order=[],idx=0,score=0,answered=false;
+let deckKey='u1',deck=decks.u1,mode='flash',order=[],idx=0,score=0,answered=false,missed=[];
 const card=document.getElementById('practiceCard');
 const bare=s=>s.replace(/[ً-ْٰـ]/g,'').replace(/\s+/g,' ').trim();
 function shuffle(a){for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a}
 function setDeck(k){deckKey=k;deck=decks[k];document.querySelectorAll('.deck-btn').forEach(b=>b.classList.toggle('active',b.dataset.deck===k));resetDeck()}
 function setMode(m){mode=m;document.querySelectorAll('.mode-sel').forEach(b=>b.classList.toggle('active',b.dataset.mode===m));resetDeck()}
-function resetDeck(){order=shuffle([...deck.keys()]);idx=0;score=0;answered=false;updateBar();render()}
+function resetDeck(){order=shuffle([...deck.keys()]);idx=0;score=0;answered=false;missed=[];updateBar();render()}
 function updateBar(){document.getElementById('scoreText').textContent='Score: '+score;document.getElementById('counterText').textContent=idx+' / '+deck.length;document.getElementById('progressFill').style.width=(deck.length?idx/deck.length*100:0)+'%'}
 function next(){idx++;answered=false;updateBar();render()}
 function options(correct,key){const opts=[deck[correct][key]];const pool=shuffle([...deck.keys()].filter(i=>i!==correct));for(const p of pool){if(opts.length>=4)break;const v=deck[p][key];if(!opts.includes(v))opts.push(v)}return shuffle(opts)}
 function render(){
- if(idx>=deck.length){card.innerHTML='<p class="prompt-label">Deck complete — ما شاء الله!</p><p class="big-arabic">أَحْسَنْتَ!</p><p class="english-answer">Final score: '+score+' / '+deck.length+'</p><button class="practice-btn primary" onclick="resetDeck()">Practice Again</button>';return}
+ if(idx>=deck.length){card.innerHTML=(typeof completionHTML==='function')?completionHTML():'<p class="prompt-label">Deck complete — ما شاء الله!</p><p class="big-arabic">أَحْسَنْتَ!</p><p class="english-answer">Final score: '+score+' / '+deck.length+'</p><button class="practice-btn primary" onclick="resetDeck()">Practice Again</button>';return}
  const w=deck[order[idx]];
  if(mode==='flash'){
   card.innerHTML='<p class="prompt-label">Card '+(idx+1)+' of '+deck.length+'</p><p class="big-arabic">'+w.ar+'</p><div class="reveal-area" id="rev"></div><div><button class="practice-btn primary" id="revBtn" onclick="reveal()">Reveal</button><button class="practice-btn secondary" onclick="next()">Next →</button></div>';
@@ -1994,19 +2022,16 @@ function render(){
  }
 }
 function reveal(){const w=deck[order[idx]];const r=document.getElementById('rev');if(r&&!answered){r.innerHTML='<p class="transliteration-answer">'+w.tr+'</p><p class="english-answer">'+w.en+'</p>';answered=true;score++;updateBar();const b=document.getElementById('revBtn');if(b)b.style.display='none'}}
-function pick(el){if(answered)return;answered=true;const correct=card.dataset.correct;document.querySelectorAll('.mc-option').forEach(o=>{o.classList.add('disabled');if(o.dataset.v===correct)o.classList.add('correct')});if(el.dataset.v===correct){score++;updateBar()}else{el.classList.remove('disabled');el.classList.add('wrong')}setTimeout(next,1300)}
-function checkFill(){if(answered)return;const w=deck[order[idx]];const f=document.getElementById('fillIn');if(!f)return;const ok=bare(f.value)===bare(w.ar);answered=true;f.classList.add(ok?'correct':'wrong');const r=document.getElementById('rev');r.innerHTML=(ok?'<p class="english-answer" style="color:var(--green-accent);font-weight:700">✓ Correct!</p>':'<p class="english-answer" style="color:var(--red-accent)">✗ Answer:</p>')+'<p class="transliteration-answer" style="font-family:\'Noto Naskh Arabic\',serif;font-style:normal;font-size:1.8rem;direction:rtl">'+w.ar+'</p>';if(ok){score++;updateBar()}setTimeout(next,1500)}
-function giveUp(){if(answered)return;answered=true;const w=deck[order[idx]];const r=document.getElementById('rev');r.innerHTML='<p class="transliteration-answer" style="font-family:\'Noto Naskh Arabic\',serif;font-style:normal;font-size:1.8rem;direction:rtl">'+w.ar+'</p>';setTimeout(next,1600)}
+function pick(el){if(answered)return;answered=true;const correct=card.dataset.correct;document.querySelectorAll('.mc-option').forEach(o=>{o.classList.add('disabled');if(o.dataset.v===correct)o.classList.add('correct')});if(el.dataset.v===correct){score++;updateBar()}else{el.classList.remove('disabled');el.classList.add('wrong');missed.push(deck[order[idx]])}setTimeout(next,1300)}
+function checkFill(){if(answered)return;const w=deck[order[idx]];const f=document.getElementById('fillIn');if(!f)return;const ok=bare(f.value)===bare(w.ar);answered=true;f.classList.add(ok?'correct':'wrong');const r=document.getElementById('rev');r.innerHTML=(ok?'<p class="english-answer" style="color:var(--green-accent);font-weight:700">✓ Correct!</p>':'<p class="english-answer" style="color:var(--red-accent)">✗ Answer:</p>')+'<p class="transliteration-answer" style="font-family:\'Noto Naskh Arabic\',serif;font-style:normal;font-size:1.8rem;direction:rtl">'+w.ar+'</p>';if(ok){score++;updateBar()}else{missed.push(w)}setTimeout(next,1500)}
+function giveUp(){if(answered)return;answered=true;missed.push(deck[order[idx]]);const w=deck[order[idx]];const r=document.getElementById('rev');r.innerHTML='<p class="transliteration-answer" style="font-family:\'Noto Naskh Arabic\',serif;font-style:normal;font-size:1.8rem;direction:rtl">'+w.ar+'</p>';setTimeout(next,1600)}
 function toggleTr(){document.body.classList.toggle('hide-tr');document.getElementById('trToggle').classList.toggle('on')}
 function toggleEn(){document.body.classList.toggle('hide-en');document.getElementById('enToggle').classList.toggle('on')}
-/* Interactive reveal answers */
 function toggleAnswer(btn){const box=btn.nextElementSibling;const open=box.classList.toggle('open');btn.classList.toggle('open',open);btn.textContent=open?'✓ Hide answer':'👁 Show answer';}
 function revealAll(el){if(!el)return;el.querySelectorAll('.btn-answer').forEach(b=>{b.nextElementSibling.classList.add('open');b.classList.add('open');b.textContent='✓ Hide answer';});}
 function hideAll(el){if(!el)return;el.querySelectorAll('.btn-answer').forEach(b=>{b.nextElementSibling.classList.remove('open');b.classList.remove('open');b.textContent='👁 Show answer';});}
-/* Flip vocab cards */
 function flipCard(el){const f=el.classList.toggle('flipped');const h=el.querySelector('.vc-hint');if(h)h.textContent=f?'tap to hide':'tap to flip';}
 function flipAllCards(btn,open){const body=btn.closest('.lesson-body');if(!body)return;const grid=body.querySelector('.vflip-grid');if(!grid)return;grid.querySelectorAll('.vcard').forEach(c=>{c.classList.toggle('flipped',open);const h=c.querySelector('.vc-hint');if(h)h.textContent=open?'tap to hide':'tap to flip';});}
-/* Side drawer */
 const unitMeta={u1:{ar:'المُقَدِّمَة',en:'Unit 1 · Introduction'},u2:{ar:'الأَصْلُ الأَوَّل',en:'Unit 2 · First Principle'},u3:{ar:'الأَصْلُ الثَّانِي',en:'Unit 3 · Second Principle'},u4:{ar:'الأَصْلُ الثَّالِث',en:'Unit 4 · Third Principle'},practice:{ar:'تَدْريب',en:'Practice'}};
 function renderDrawer(){
   const body=document.getElementById('drawerBody');if(!body)return;
@@ -2061,6 +2086,297 @@ document.addEventListener('click',e=>{
 renderLessonTabs('u1');
 (function(){const id=location.hash.slice(1);if(id&&anchorToTab[id]){switchTab(anchorToTab[id],['unit1','unit2','unit3','unit4','practice'].includes(id)?null:id);}})();
 resetDeck();
+</script>
+<script>
+/* ================= ENHANCEMENTS ================= */
+/* ---- Themes + dark mode (persisted) ---- */
+const THEMES=[['sage','#3d464e','#647e5a'],['emerald','#1f6e4d','#b8923d'],['plum','#7b3f5f','#c19a3d'],['midnight','#21496f','#c6a24a'],['ocean','#0e7490','#e0a12e'],['night','#12171a','#d8b25a']];
+function applyTheme(k){
+  if(k==='sage'){document.documentElement.removeAttribute('data-theme');}
+  else{document.documentElement.setAttribute('data-theme',k);}
+  try{localStorage.setItem('uth-theme',k);}catch(e){}
+  document.querySelectorAll('.sw').forEach(s=>s.classList.toggle('active',s.dataset.k===k));
+}
+function renderThemes(){
+  const el=document.getElementById('drawerThemes');if(!el)return;
+  let cur='sage';try{cur=localStorage.getItem('uth-theme')||'sage';}catch(e){}
+  el.innerHTML='<div class="drawer-unit-head">السِّمَة<span class="due-ar">Theme</span></div><div class="sw-row">'+
+    THEMES.map(t=>'<div class="sw'+(t[0]===cur?' active':'')+'" data-k="'+t[0]+'" title="'+t[0]+'" onclick="applyTheme(\''+t[0]+'\')" style="background:linear-gradient(135deg,'+t[1]+' 55%,'+t[2]+' 55%)"></div>').join('')+'</div>';
+}
+
+/* ---- Simple Explanation content (Teen / All-ages) for all 21 lessons ---- */
+const EXPL={
+ l1:{teen:`Think of learning your deen like leveling up in a game: first you learn the controls (knowledge), then you actually play (act on it), then you bring friends in (call others), then you keep going when it gets hard (patience). Skip a stage and you stall.`,all:`Four duties, in order: learn it, live it, share it, and endure the difficulty that comes with it. Sūrat al-ʿAsr names all four as the only way out of loss.`,check:`Which of the four is your weakest right now?`},
+ l2:{teen:`Picture a timer running on every human life — and by default everyone is losing time. Only a small group escapes, marked by four habits. Ash-Shāfiʿī said this three-verse sūrah alone could wake people up.`,all:`Sūrat al-ʿAsr diagnoses humanity as being in loss, then names the four exits: faith, righteous deeds, enjoining truth, and enjoining patience.`,check:`If your time were audited today, would you be in the "except" group?`},
+ l3:{teen:`You were not dropped here by accident with no instructions. The One who made you and feeds you also sent a guide — follow the guide and reach the destination; ignore him and you crash, like Pharaoh did.`,all:`Allāh created and provides for us and did not leave us aimless — He sent a Messenger. Obeying him leads to Paradise; disobeying leads to the Fire.`,check:`Do you live as though life has a purpose and a message from Allāh in it?`},
+ l4:{teen:`Worship is a VIP pass with exactly one name on it — not even an angel or a prophet can borrow it. And your deepest loyalty follows your faith, not your last name.`,all:`Allāh accepts no partner in worship, not even a close angel or a sent prophet; and true faith means not giving loyalty to those who war against Allāh and His Messenger, even close relatives.`,check:`Whose approval quietly pulls you away from Allāh?`},
+ l5:{teen:`Factory settings: you were built for one job — worship Allāh alone, sincerely, no add-ons. The biggest "do" is Tawḥīd; the biggest "don't" is shirk. Everything else orbits that.`,all:`The ḥanīfiyyah of Ibrāhīm is sincere, exclusive worship of Allāh — the purpose of creation. Greatest command: Tawḥīd. Greatest prohibition: shirk.`,check:`Who are your good deeds really for?`},
+ l6:{teen:`Three questions are coming that you cannot Google in the moment — Who is your Lord? What is your religion? Who is your Prophet ﷺ? This whole book is the study guide for that interview in the grave.`,all:`The spine of the book: know your Lord, your religion, and your Prophet ﷺ — the very three questions each soul is asked in the grave.`,check:`Could you answer all three right now, with proof?`},
+ l7:{teen:`You have never seen the artist, but you are standing inside the painting — sunrises on a timer, a moon that keeps its schedule. Knowing your Lord starts with gratitude and noticing the signs.`,all:`Your Lord is Allāh, who created and sustains all things. You know Him through His signs (night, day, sun, moon) and His creation — none of which may be worshipped instead of Him.`,check:`Which sign of Allāh did you notice today without even thinking about it?`},
+ l8:{teen:`The one who built the house makes the rules. Since Allāh alone created and feeds you, He alone gets your worship — sending it elsewhere is like thanking the delivery box instead of the sender.`,all:`Because Allāh is the Creator and Sustainer, He alone deserves worship. Setting up rivals (andād) to Him is forbidden — even as you know He is the One who made you.`,check:`Is there a "rival" — a fear or an approval — competing with Allāh in your heart?`},
+ l9:{teen:`Worship is not only salah — your fear, your hope, your trust, and who you call in a crisis are all worship, and most of it happens inside the heart. One correct address for all of it: Allāh.`,all:`Each act — duʿāʾ, fear, hope, reliance, awe, turning back — is proven to be worship. So none of them may be aimed at anyone but Allāh.`,check:`When you are scared or truly desperate, whose name comes first?`},
+ l10:{teen:`The acts people most often slip up on — asking the unseen for rescue, sacrificing, making vows — are exactly the ones pinned to Allāh alone here. Shirk usually sneaks in through fear and need, not open denial.`,all:`Seeking help, refuge, rescue, sacrifice, and vows are all worship for Allāh alone. Asking a living person for ordinary help is fine; seeking the unseen is worship.`,check:`In a real emergency, is your reflex "yā Allāh"?`},
+ l11:{teen:`Faith is a "no" before a "yes": lā ilāha wipes the heart clean of every fake god, then illā-llāh installs the real One. Empty the cup, then fill it.`,all:`Islām is submission with Tawḥīd, obedience, and disowning shirk, built on five pillars. The shahādah negates all false worship and affirms worship for Allāh alone.`,check:`What might still be sharing space in your heart alongside Allāh?`},
+ l12:{teen:`Saying "Muḥammad is the Messenger" is signing a four-point contract: do what he said, believe what he told, drop what he banned, and worship only the way he showed. Love here is measured in following, not feelings.`,all:`Witnessing the Messenger ﷺ means obeying his commands, believing his reports, avoiding his prohibitions, and worshipping Allāh only as he legislated — with a proof behind each pillar.`,check:`Is your worship his sunnah, or something you invented?`},
+ l13:{teen:`Faith is a tree: a fixed root of six beliefs, and 70-odd branches from the shahādah all the way down to moving trash off the road. Even modesty is a branch — character is part of creed.`,all:`Īmān has six pillars (Allāh, angels, books, messengers, the Last Day, and the Decree) and 70-odd branches; it rises and falls with your deeds.`,check:`Which of the six do you find hardest to fully trust — especially qadar?`},
+ l14:{teen:`Iḥsān is worshipping like the camera is on — and the Viewer is the best possible one: Allāh. You cannot see Him, but He always sees you, and that awareness upgrades everything.`,all:`Iḥsān is to worship Allāh as if you see Him; and though you do not, He sees you. It is one pillar that perfects the other two levels.`,check:`Would your salah change if you truly felt watched — with love?`},
+ l15:{teen:`A stranger sits knee-to-knee with the Prophet ﷺ, quizzes him on the whole religion, confirms each answer — then turns out to be an angel. Even the way he asked models how to learn.`,all:`In one conversation Jibrīl draws out Islām, Īmān, and Iḥsān; then the Prophet ﷺ reveals it was Jibrīl "come to teach you your religion" — the Sunnah-proof for this whole unit.`,check:`If Jibrīl quizzed you on Islām, Īmān, and Iḥsān, how far would you get?`},
+ l16:{teen:`Before you follow someone, you learn who they are. The Prophet ﷺ is a real man with a real family tree back to Ibrāhīm, 63 years, two callings — and from day one, one message: quit shirk, worship Allāh.`,all:`Knowing the Prophet ﷺ starts with his lineage to Ismāʿīl, his 63 years, and his mission: made Prophet by Iqraʾ, Messenger by al-Muddaththir, to warn from shirk and call to Tawḥīd.`,check:`How much of his actual life do you actually know?`},
+ l17:{teen:`Ten patient years of calling came before the big moves — the night journey, the prayer, the migration. And hijrah is not ancient history: whenever a place strangles your deen, leaving for its sake is still on the table.`,all:`After ten years calling to Tawḥīd came the Miʿrāj, the five daily prayers, and the Hijrah — moving from a land of shirk to a land of Islām, a ruling that lasts until the Hour.`,check:`Does your environment feed your deen, or starve it?`},
+ l18:{teen:`Once settled, the rest of the law arrived, the religion was declared complete, and the Prophet ﷺ passed away — but the deen stayed whole. He left no good un-pointed-to and no evil un-warned-from, so nothing needs "upgrading."`,all:`In Madīnah the remaining laws came; the religion was perfected (5:3); the Prophet ﷺ died but his religion remains — every good shown, every evil warned against.`,check:`Do you look for "new" spirituality outside what he taught?`},
+ l19:{teen:`The God who grew you from dust once can obviously do it again — death is the connecting flight, not the destination. Then comes the reckoning, which is exactly why every small deed counts.`,all:`After death come resurrection and recompense for deeds; denying the resurrection is disbelief. Belief in the Last Day is what gives every deed its weight.`,check:`If your record were read out today, what would you want changed?`},
+ l20:{teen:`Every prophet, from Nūḥ to Muḥammad ﷺ, brought the same two-line message: worship Allāh, ditch the ṭāghūt. And ṭāghūt is not just Iblīs — it is anything obeyed past its limit in Allāh's place.`,all:`All messengers carried one message: worship Allāh alone and shun the ṭāghūt — anything worshipped, followed, or obeyed beyond its limit. Rejecting it is half the shahādah.`,check:`What false authority does your heart quietly obey?`},
+ l21:{teen:`The book ends where it started — Tawḥīd. Say no to the false, yes to Allāh, and you have grabbed a rope that never snaps. These three principles are not an exam to pass; they are a handhold to grip for life.`,all:`Whoever rejects the ṭāghūt and believes in Allāh has grasped the unbreakable handhold — the meaning of Lā ilāha illā Allāh, and the sum of the three principles.`,check:`Are you holding the rope, or just reading about it?`}
+};
+function explTab(btn,n){const c=btn.closest('.expl-card');c.querySelectorAll('.expl-tab').forEach((b,i)=>b.classList.toggle('active',i===n));c.querySelectorAll('.expl-pane').forEach((p,i)=>p.classList.toggle('active',i===n));}
+
+/* ---- Ordered flow for pager + injection ---- */
+const FLOW=[];['u1','u2','u3','u4'].forEach(u=>lessonsByUnit[u].forEach(l=>FLOW.push({id:l[0],unit:u,label:l[2]})));
+function goLesson(u,id){switchTab(u,id);history.replaceState(null,'','#'+id);}
+
+/* inject Simple Explanation + pager into each lesson */
+FLOW.forEach((f,i)=>{
+  const les=document.getElementById(f.id);if(!les)return;
+  const body=les.querySelector('.lesson-body');if(!body)return;
+  // explainer
+  const e=EXPL[f.id];
+  if(e){
+    const card=document.createElement('div');card.className='expl-card';
+    card.innerHTML='<div class="expl-head">💬 Simple Explanation <span class="expl-ar">· بِبَسَاطَة</span></div>'+
+      '<div class="expl-tabs"><button class="expl-tab active" onclick="explTab(this,0)">Teen</button><button class="expl-tab" onclick="explTab(this,1)">All-ages</button></div>'+
+      '<div class="expl-pane active"><p>'+e.teen+'</p><div class="expl-checkup">✓ '+e.check+'</div></div>'+
+      '<div class="expl-pane"><p>'+e.all+'</p></div>';
+    const anchor=body.querySelector('.study-note.lesson');
+    if(anchor&&anchor.nextSibling)body.insertBefore(card,anchor.nextSibling);else body.insertBefore(card,body.firstChild);
+  }
+  // pager
+  const prev=FLOW[i-1],nx=FLOW[i+1];
+  const p=document.createElement('div');p.className='lesson-pager';
+  p.innerHTML=(prev?'<button class="pg-btn" onclick="goLesson(\''+prev.unit+'\',\''+prev.id+'\')">‹ Previous</button>':'<span></span>')+
+    '<span class="pg-pos">Lesson '+(i+1)+' of '+FLOW.length+'</span>'+
+    (nx?'<button class="pg-btn" onclick="goLesson(\''+nx.unit+'\',\''+nx.id+'\')">Next ›</button>':'<span></span>');
+  body.appendChild(p);
+});
+
+/* ---- Global search ---- */
+const SEARCH=[];
+FLOW.forEach(f=>{
+  const les=document.getElementById(f.id);if(!les)return;
+  const t=les.querySelector('.lesson-title-en');
+  SEARCH.push({id:f.id,unit:f.unit,type:'lesson',ar:'',tr:'',en:(t?t.textContent:f.label)});
+  les.querySelectorAll('.vocab-table tbody tr').forEach(tr=>{
+    const ar=(tr.querySelector('.vtd-ar')||{}).textContent||'';
+    const trr=(tr.querySelector('.vtd-tr')||{}).textContent||'';
+    const tds=tr.querySelectorAll('td');const en=tds[2]?tds[2].textContent:'';
+    if(ar)SEARCH.push({id:f.id,unit:f.unit,type:'vocab',ar:ar,tr:trr,en:en});
+  });
+});
+function stripAr(s){return s.replace(/[ً-ْٰـ]/g,'');}
+function runSearch(q){
+  const res=document.getElementById('searchResults');if(!res)return;
+  q=(q||'').trim();
+  if(!q){res.classList.remove('open');res.innerHTML='';return;}
+  const ql=q.toLowerCase(),qa=stripAr(q);
+  const out=SEARCH.filter(x=>x.en.toLowerCase().includes(ql)||x.tr.toLowerCase().includes(ql)||(x.ar&&stripAr(x.ar).includes(qa))).slice(0,14);
+  if(!out.length){res.innerHTML='<div class="sr-empty">No matches for “'+q+'”</div>';res.classList.add('open');return;}
+  res.innerHTML=out.map(x=>'<div class="sr-item" onclick="goLesson(\''+x.unit+'\',\''+x.id+'\');closeSearch()">'+
+    (x.type==='vocab'?'<span class="sr-ar">'+x.ar+'</span><span class="sr-tr">'+x.tr+'</span> — '+x.en:'<span class="sr-les">📖 '+x.en+'</span>')+
+    '<span class="sr-u">'+x.unit.toUpperCase()+'</span></div>').join('');
+  res.classList.add('open');
+}
+function closeSearch(){const res=document.getElementById('searchResults');if(res)res.classList.remove('open');const i=document.getElementById('searchInput');if(i)i.value='';}
+document.addEventListener('click',e=>{if(!e.target.closest('.enh-search'))closeSearch();});
+
+/* ---- Practice upgrades: best score + review missed + keyboard ---- */
+function completionHTML(){
+  const key='uth-best-'+deckKey+'-'+mode;let best=0;
+  try{best=parseInt(localStorage.getItem(key))||0;}catch(e){}
+  const pct=deck.length?Math.round(score/deck.length*100):0;
+  if(score>best){best=score;try{localStorage.setItem(key,best);}catch(e){}}
+  let h='<p class="prompt-label">Deck complete — ما شاء الله!</p><p class="big-arabic">أَحْسَنْتَ!</p>';
+  h+='<p class="english-answer">Score: '+score+' / '+deck.length+' ('+pct+'%)</p>';
+  h+='<p class="prompt-label" style="background:none;color:var(--ink-muted)">Best this deck &amp; mode: '+best+' / '+deck.length+'</p>';
+  h+='<div style="margin-top:.4rem">';
+  if(missed&&missed.length)h+='<button class="practice-btn danger" onclick="reviewMissed()">↻ Review missed ('+missed.length+')</button>';
+  h+='<button class="practice-btn primary" onclick="resetDeck()">Practice Again</button></div>';
+  return h;
+}
+function reviewMissed(){if(!missed||!missed.length)return;const m=missed.slice();deck=m;order=shuffle([...deck.keys()]);idx=0;score=0;missed=[];answered=false;updateBar();render();}
+document.addEventListener('keydown',e=>{
+  const p=document.getElementById('panel-practice');if(!p||!p.classList.contains('active'))return;
+  if(document.activeElement&&document.activeElement.id==='fillIn')return;
+  if(/^[1-4]$/.test(e.key)){const opts=[...document.querySelectorAll('.mc-option')];const el=opts[parseInt(e.key)-1];if(el&&!answered)pick(el);}
+  else if(e.key==='Enter'&&mode==='flash'&&!answered){reveal();}
+});
+
+/* ---- init ---- */
+renderThemes();
+let _th='sage';try{_th=localStorage.getItem('uth-theme')||'sage';}catch(e){}
+applyTheme(_th);
+</script>
+<style>
+.pgz-decks{display:flex;gap:.4rem;flex-wrap:wrap;margin:.6rem 0}
+.pgz-decks button{border:1.5px solid var(--sand-200);background:var(--white);color:var(--ink-light);border-radius:18px;padding:.4rem 1rem;font-family:'DM Sans',sans-serif;font-weight:600;font-size:.8rem;cursor:pointer;transition:.2s}
+.pgz-decks button.active{background:var(--gold);color:#fff;border-color:var(--gold)}
+.pgz-q-tl{font-size:1.2rem;font-weight:700;color:var(--ink);margin-bottom:.3rem;line-height:1.5}
+.pgz-q-en{font-size:.9rem;color:var(--ink-muted);font-style:italic;margin-bottom:.4rem}
+.pgz-ans{margin-top:.7rem;border-top:1px solid var(--sand-200);padding-top:.7rem}
+.pgz-ans .a-ar{font-family:'Noto Naskh Arabic','Amiri',serif;font-size:1.4rem;direction:rtl;text-align:right;color:var(--teal-dark);display:block;margin-bottom:.35rem;line-height:2}
+.pgz-ans .a-tl{font-size:.95rem;color:var(--ink)}
+.pgz-nav{display:flex;justify-content:space-between;align-items:center;margin-top:.9rem;gap:.5rem;width:100%}
+.pgz-tag{display:inline-block;background:rgba(100,126,90,.14);color:var(--gold-dark);border-radius:8px;padding:1px 8px;font-size:.65rem;font-weight:700;margin-bottom:.5rem}
+.pgz-exam-note{font-size:.72rem;color:var(--ink-muted);opacity:.8;font-style:italic;margin-top:.4rem}
+</style>
+<script>
+/* ================= PAGSUSULIT (Tagalog quiz) ================= */
+/* q = Tagalog question, en = English gloss, aar = Arabic answer/term (optional), atl = Tagalog answer */
+const QUIZ={
+ l1:[
+  {q:'Ano ang hatol ng pagsabi ng "Bismillāh" sa unahan ng mga aklat?',en:'What is the ruling of saying "Bismillāh" at the start of books?',aar:'سُنَّة',atl:'Sunnah — pagsunod sa Sunnah, hindi wājib.',exam:true},
+  {q:'Ano ang apat (4) na masʾalah na wājib nating matutuhan bilang mga Muslim?',en:'What are the four matters obligatory upon us Muslims to learn?',aar:'العِلْم، العَمَل، الدَّعْوَة، الصَّبْر',atl:'(1) العِلْم al-ʿilm — ang kaalaman (kilalanin ang Allāh, ang Propeta Niya, at ang deen ng Islām nang may katibayan); (2) العَمَل al-ʿamal — pagsasagawa nito; (3) الدَّعْوَة ad-daʿwah — pag-aanyaya rito; (4) الصَّبْر aṣ-ṣabr — pagtitiis sa pinsalang darating.',exam:true},
+  {q:'Bakit unang inilagay ang kaalaman (ʿilm) bago ang salita at gawa?',en:'Why is knowledge placed before speech and action?',aar:'العِلْمُ قَبْلَ القَوْلِ وَالعَمَلِ',atl:'Sapagkat ang tamang gawa ay dapat nakabatay sa kaalaman. Sabi ni al-Bukhārī: "Ang kaalaman bago ang salita at gawa."'}
+ ],
+ l2:[
+  {q:'Ano ang buod ng Sūrat al-ʿAsr?',en:'What does Sūrat al-ʿAsr summarize?',aar:'خُسْر / الفَلَاح',atl:'Dalawang uri ng tao: ang mga LUGI (fī khusr), at ang mga MATAGUMPAY na may apat na katangian — īmān (paniniwala), mabuting gawa, pag-aanyaya sa katotohanan, at pagtitiis.',exam:true},
+  {q:'Ano ang sinabi ni Imām ash-Shāfiʿī tungkol sa Sūrat al-ʿAsr?',en:'What did Imām ash-Shāfiʿī say about Sūrat al-ʿAsr?',aar:'لَوْ مَا أَنْزَلَ اللهُ حُجَّةً إِلَّا هَذِهِ السُّورَةَ لَكَفَتْهُمْ',atl:'"Kung wala nang ibang katibayang ibinaba ang Allāh sa Kanyang nilikha maliban sa sūrah na ito, sapat na sana ito sa kanila."',exam:true},
+  {q:'Saan inihahalintulad ang taong may kaalaman ngunit hindi isinasagawa?',en:'To whom is the one who has knowledge but does not act upon it likened?',aar:'كَمَثَلِ الحِمَارِ يَحْمِلُ أَسْفَارًا',atl:'Sa mga nagtamo ng galit ng Allāh (al-maghḍūb ʿalayhim) — nalaman ang katotohanan ngunit tinalikuran; at gaya ng "asnong may dalang mga aklat" (Qurʾān 62:5). (Mula sa paliwanag ng mga ʿulamāʾ.)',exam:true}
+ ],
+ l3:[
+  {q:'Nilikha ba tayo ng Allāh nang walang layunin? Ano ang ginawa Niya sa halip?',en:'Did Allāh create us aimlessly? What did He do instead?',aar:'بَلْ أَرْسَلَ إِلَيْنَا رَسُولًا',atl:'Hindi; hindi Niya tayo iniwang هَمَل (walang layunin) — nagpadala Siya sa atin ng Rasūl (Sugo).'},
+  {q:'Ano ang kahihinatnan ng sumunod sa Sugo, at ng sumuway?',en:'What is the outcome for one who obeys the Messenger, and one who disobeys?',aar:'الجَنَّة / النَّار',atl:'Ang sumunod → papasok sa Jannah (Paraiso); ang sumuway → papasok sa Nār (Apoy).'},
+  {q:'Kanino inihalintulad ang ating ummah sa āyah 73:15-16?',en:'To which nation are we compared in 73:15-16?',aar:'فِرْعَوْن',atl:'Kay Firʿawn (Pharaoh), na sumuway sa Sugo kaya\'t dinakip siya ng Allāh nang matinding pagdakip.'}
+ ],
+ l4:[
+  {q:'Puwede bang ialay ang isang uri ng pagsamba sa malapit na anghel o isinugong propeta?',en:'May an act of worship be directed to a close angel or a sent prophet?',aar:'لَا مَلَكٌ مُقَرَّبٌ وَلَا نَبِيٌّ مُرْسَلٌ',atl:'Hindi. Hindi nalulugod ang Allāh na may itambal sa Kanya sa pagsamba — kahit malapit na anghel o isinugong propeta.'},
+  {q:'Ano ang muwālāh, at ano ang hatol dito sa mga humaharap sa Allāh?',en:'What is muwālāh, and its ruling toward the enemies of Allāh?',aar:'مُوَالَاة',atl:'Muwālāh = pag-ibig at pakikipag-alyansa. Hindi ito ipinapahintulot sa mga humaharap (ḥādda) sa Allāh at sa Sugo Niya, kahit pinakamalapit na kamag-anak.'},
+  {q:'Anong titulo ang ibinigay ng Allāh sa hindi nakikipag-alyansa sa mga kalaban Niya?',en:'What title does Allāh give those who do not ally with His enemies?',aar:'حِزْبُ اللهِ — المُفْلِحُونَ',atl:'حِزْبُ اللهِ (ḥizbullāh) — ang partido ng Allāh; at sila ang mga matagumpay (al-mufliḥūn).'}
+ ],
+ l5:[
+  {q:'Ano ang ḥanīfiyyah, ang relihiyon ni Ibrāhīm?',en:'What is the ḥanīfiyyah, the religion of Ibrāhīm?',aar:'أَنْ تَعْبُدَ اللهَ وَحْدَهُ مُخْلِصًا لَهُ الدِّينَ',atl:'Ang sambahin ang Allāh nang tanging Siya lamang, nang may kadalisayan (ikhlāṣ) sa deen.'},
+  {q:'Ano ang kahulugan ng "لِيَعْبُدُونِ" (upang sambahin Ako)?',en:'What is the meaning of "li-yaʿbudūn" (that they worship Me)?',aar:'يُوَحِّدُونِ',atl:'"Upang isahin / bukurin Ako" — ibig sabihin, tawḥīd.'},
+  {q:'Ano ang pinakadakilang utos at ang pinakadakilang bawal?',en:'What is the greatest command and the greatest prohibition?',aar:'التَّوْحِيد / الشِّرْك',atl:'Pinakadakilang utos: التَّوْحِيد (tawḥīd). Pinakadakilang bawal: الشِّرْك (shirk).'}
+ ],
+ l6:[
+  {q:'Ano ang tatlong uṣūl (saligan) na dapat malaman ng tao?',en:'What are the three principles a person must know?',aar:'الرَّبّ · الدِّين · النَّبِيّ ﷺ',atl:'(1) Kilalanin ang iyong Rabb; (2) ang iyong deen; (3) ang iyong Propeta na si Muḥammad ﷺ.'},
+  {q:'Bakit mahalagang malaman ang tatlong ito?',en:'Why is knowing these three important?',aar:'أَسْئِلَةُ القَبْر',atl:'Ito ang tatlong tanong sa tao sa libingan: Sino ang Rabb mo? Ano ang deen mo? Sino ang Propeta mo?'},
+  {q:'Ano ang ibig sabihin ng "uṣūl"?',en:'What does "uṣūl" mean?',aar:'الأُصُول (جمع أَصْل)',atl:'Mga saligan o ugat (maramihan ng aṣl). Kaya "al-Uṣūl ath-Thalāthah" = ang tatlong saligan.'}
+ ],
+ l7:[
+  {q:'Sino ang Rabb mo, at ano ang katibayan?',en:'Who is your Lord, and what is the proof?',aar:'﴿الحَمْدُ لِلهِ رَبِّ العَالَمِينَ﴾',atl:'Ang Allāh, na nagpalaki sa akin at sa lahat ng nilalang sa pamamagitan ng biyaya Niya. Katibayan: al-Fātiḥah 1:1.'},
+  {q:'Sa anong dalawang bagay mo nakilala ang Rabb mo?',en:'By what two things did you come to know your Lord?',aar:'الآيَات وَالمَخْلُوقَات',atl:'Sa Kanyang āyāt (tanda: gabi, araw, araw-araw, buwan) at sa Kanyang makhlūqāt (nilikha: mga langit at lupa).'},
+  {q:'Sa āyah 41:37, ano ang ipinagbabawal, at kanino tayo dapat magpatirapa?',en:'In 41:37, what is forbidden, and to whom should we prostrate?',aar:'اسْجُدُوا لِلهِ الَّذِي خَلَقَهُنَّ',atl:'Bawal magpatirapa sa araw o sa buwan; magpatirapa sa Allāh na siyang lumikha sa kanila.'}
+ ],
+ l8:[
+  {q:'Bakit ang Rabb lamang ang karapat-dapat sambahin?',en:'Why is the Lord alone deserving of worship?',aar:'الخَالِقُ هُوَ المُسْتَحِقُّ لِلْعِبَادَةِ',atl:'Sapagkat Siya ang Manlilikha at Tagapagtustos. Ayon kay Ibn Kathīr: ang Manlilikha ng mga bagay na ito ang karapat-dapat sa pagsamba.'},
+  {q:'Ano ang hatol sa nagbaling ng isang uri ng pagsamba sa iba kaysa Allāh?',en:'What is the ruling on directing an act of worship to other than Allāh?',aar:'مُشْرِكٌ كَافِرٌ',atl:'Siya ay mushrik at kāfir. Katibayan: ﴿فَلَا تَدْعُوا مَعَ اللهِ أَحَدًا﴾ [72:18].'},
+  {q:'Ano ang tatlong pangunahing uri ng pagsamba na unang binanggit?',en:'What are the first three types of worship mentioned?',aar:'الإِسْلَام، الإِيمَان، الإِحْسَان',atl:'Al-Islām, al-Īmān, at al-Iḥsān.'}
+ ],
+ l9:[
+  {q:'Aling gawa ang tinawag ng Propeta ﷺ na "ubod ng pagsamba" (mukh al-ʿibādah)?',en:'Which act did the Prophet ﷺ call "the core of worship"?',aar:'الدُّعَاء',atl:'Ang duʿāʾ (panalangin).'},
+  {q:'Ano ang katibayan ng tawakkul (pananalig)?',en:'What is the proof for tawakkul (reliance)?',aar:'﴿وَمَنْ يَتَوَكَّلْ عَلَى اللهِ فَهُوَ حَسْبُهُ﴾',atl:'Ang āyah: "At sinumang manalig sa Allāh, Siya ay sapat na sa kanya." [65:3].'},
+  {q:'Tatlong gawa ang magkakasamang binanggit sa āyah 21:90 — ano ang mga ito?',en:'Verse 21:90 mentions three acts together — which three?',aar:'الرَّغْبَة، الرَّهْبَة، الخُشُوع',atl:'Ar-raghbah (pagnanais), ar-rahbah (pangamba), at al-khushūʿ (pagpapakumbaba).'}
+ ],
+ l10:[
+  {q:'Aling āyah ang naglalaman ng pagsamba at paghingi-ng-tulong sa iisang parirala?',en:'Which verse contains worship and seeking-help in one phrase?',aar:'﴿إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ﴾',atl:'Al-Fātiḥah 1:5 — "Sa Iyo lamang kami sumasamba, at sa Iyo lamang kami humihingi ng tulong."'},
+  {q:'Sino ang isinumpa ng Allāh, ayon sa hadith tungkol sa pag-aalay (dhabḥ)?',en:'Whom did Allāh curse, per the ḥadīth on sacrifice?',aar:'مَنْ ذَبَحَ لِغَيْرِ اللهِ',atl:'Ang nag-alay (nagkatay) para sa iba kaysa sa Allāh.'},
+  {q:'Sa isang pangungusap, ano ang Unang Saligan (First Principle)?',en:'In one sentence, what is the First Principle?',aar:'إِفْرَادُ اللهِ بِالعِبَادَةِ',atl:'Ang kilalanin ang iyong Rabb — na bukurin Siya sa lahat ng uri ng pagsamba.'}
+ ]
+};
+const AR_NUM=['١','٢','٣','٤','٥','٦','٧','٨','٩','١٠'];
+const QZ_UNIT={l1:'u1',l2:'u1',l3:'u1',l4:'u1',l5:'u1',l6:'u1',l7:'u2',l8:'u2',l9:'u2',l10:'u2'};
+
+/* inject per-lesson Pagsusulit block (before the pager) */
+Object.keys(QUIZ).forEach(id=>{
+  const les=document.getElementById(id);if(!les)return;
+  const body=les.querySelector('.lesson-body');if(!body)return;
+  const wrap=document.createElement('div');
+  let items=QUIZ[id].map((it,i)=>{
+    const aar=it.aar?'<span class="a-ar">'+it.aar+'</span>':'';
+    const tag=it.exam?'<span class="pgz-tag">★ Tunay na tanong sa pagsusulit</span> ':'';
+    return '<div class="exercise-item"><span class="num">'+AR_NUM[i]+'</span>'+
+      '<p class="en">'+tag+'<span class="pgz-q-tl">'+it.q+'</span><span class="pgz-q-en">'+it.en+'</span></p>'+
+      '<button class="btn-answer" onclick="toggleAnswer(this)">👁 Ipakita ang sagot</button>'+
+      '<div class="answer-box">'+aar+'<span class="a-tl">'+it.atl+'</span></div></div>';
+  }).join('');
+  wrap.innerHTML='<hr class="section-divider"><span class="section-label gold">📝 Pagsusulit — Quiz (Tagalog)</span>'+
+    '<p class="note"><em>Mga tanong sa istilo ng pagsusulit, may mga mungkahing sagot. Exam-style questions with suggested answers.</em></p>'+
+    '<div class="exercise"><div class="exercise-header">Sagutin — Answer:</div>'+
+    '<div class="reveal-controls"><button class="btn-reveal-all" onclick="revealAll(this.closest(\'.exercise\'))">Reveal all</button><button class="btn-hide-all" onclick="hideAll(this.closest(\'.exercise\'))">Hide all</button></div>'+
+    '<div class="exercise-items">'+items+'</div></div>';
+  const pager=body.querySelector('.lesson-pager');
+  if(pager)body.insertBefore(wrap,pager);else body.appendChild(wrap);
+});
+
+/* Practice-tab Quiz Mode */
+let qzScope='u1',qzList=[],qzIdx=0,qzShown=false;
+function qzBuild(){
+  qzList=[];
+  Object.keys(QUIZ).forEach(id=>{
+    if(qzScope==='all'||QZ_UNIT[id]===qzScope) QUIZ[id].forEach(it=>qzList.push(Object.assign({lesson:id},it)));
+  });
+  qzIdx=0;qzShown=false;qzRender();
+}
+function qzSetScope(s){qzScope=s;document.querySelectorAll('.pgz-decks button').forEach(b=>b.classList.toggle('active',b.dataset.s===s));qzBuild();}
+function qzReveal(){qzShown=true;qzRender();}
+function qzMove(d){qzIdx=(qzIdx+d+qzList.length)%qzList.length;qzShown=false;qzRender();}
+function qzRender(){
+  const c=document.getElementById('pgzCard');if(!c)return;
+  if(!qzList.length){c.innerHTML='<p class="english-answer">No questions in this scope.</p>';return;}
+  const it=qzList[qzIdx];
+  const lbl=(QZ_UNIT[it.lesson]==='u1'?'Unit 1':'Unit 2')+' · '+it.lesson.toUpperCase();
+  let h='<p class="prompt-label">Tanong '+(qzIdx+1)+' / '+qzList.length+' · '+lbl+'</p>';
+  if(it.exam)h+='<span class="pgz-tag">★ Tunay na tanong sa pagsusulit</span>';
+  h+='<div class="pgz-q-tl">'+it.q+'</div><div class="pgz-q-en">'+it.en+'</div>';
+  if(qzShown){h+='<div class="pgz-ans">'+(it.aar?'<span class="a-ar">'+it.aar+'</span>':'')+'<span class="a-tl">'+it.atl+'</span></div>';}
+  else{h+='<button class="practice-btn primary" onclick="qzReveal()">Ipakita ang sagot · Show answer</button>';}
+  h+='<div class="pgz-nav"><button class="practice-btn secondary" onclick="qzMove(-1)">‹ Nakaraan</button><button class="practice-btn secondary" onclick="qzMove(1)">Susunod ›</button></div>';
+  c.innerHTML=h;
+}
+(function(){
+  const pr=document.querySelector('#practice .lesson-body');if(!pr)return;
+  const sec=document.createElement('div');
+  sec.innerHTML='<hr class="section-divider"><span class="section-label gold">📝 Pagsusulit — Quiz Mode</span>'+
+    '<p class="note"><em>Self-test with the exam-style questions (Tagalog). Choose a scope, then reveal each answer.</em></p>'+
+    '<div class="pgz-decks" id="pgzDecks">'+
+      '<button data-s="u1" class="active" onclick="qzSetScope(\'u1\')">Unit 1</button>'+
+      '<button data-s="u2" onclick="qzSetScope(\'u2\')">Unit 2</button>'+
+      '<button data-s="all" onclick="qzSetScope(\'all\')">All</button>'+
+    '</div><div class="practice-card" id="pgzCard"></div>';
+  pr.appendChild(sec);
+  qzBuild();
+})();
+</script>
+<style>
+/* one-lesson-at-a-time paging */
+.unit-panel.paged .lesson{display:none}
+.unit-panel.paged .lesson.show{display:block;animation:panelIn .3s ease}
+</style>
+<script>
+/* ================= ONE-LESSON-AT-A-TIME ================= */
+['u1','u2','u3','u4'].forEach(u=>{const p=document.getElementById('panel-'+u);if(p)p.classList.add('paged');});
+function showOneLesson(unit,id){
+  const panel=document.getElementById('panel-'+unit);if(!panel)return;
+  const arts=[...panel.querySelectorAll('.lesson')];
+  let target=id;
+  if(!target||!arts.some(a=>a.id===target)) target=((lessonsByUnit[unit]||[])[0]||[])[0];
+  arts.forEach(a=>a.classList.toggle('show',a.id===target));
+  if(typeof highlightLessonTab==='function') highlightLessonTab(target);
+}
+switchTab=function(k,anchor){
+  document.querySelectorAll('.unit-panel').forEach(p=>p.classList.toggle('active',p.id==='panel-'+k));
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.toggle('active',b.dataset.tab===k));
+  renderLessonTabs(k);
+  if(k==='practice'){window.scrollTo({top:0,behavior:'smooth'});return;}
+  showOneLesson(k,anchor);
+  window.scrollTo({top:0,behavior:'smooth'});
+};
+/* re-apply routing with the new paging-aware switchTab */
+(function(){
+  const h=location.hash.slice(1);
+  if(h==='practice'){switchTab('practice');}
+  else if(h&&anchorToTab[h]){switchTab(anchorToTab[h],['unit1','unit2','unit3','unit4','practice'].includes(h)?null:h);}
+  else{switchTab('u1');}
+})();
 </script>
 </body>
 </html>
